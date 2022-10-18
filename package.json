@@ -1,0 +1,14 @@
+{
+  "name": "app-doc-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Grabovskij",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.1.1"
+  }
+}
