@@ -1009,12 +1009,12 @@ const listContainer = document.querySelector('#answer_list');
 const submitReply = document.querySelector('#submit_reply');
 
 let mainReply = document.querySelector('#main_page');
-let submitBack = document.querySelector('#submit_back');
+// let submitBack = document.querySelector('#submit_back');
 let answerBtn = document.querySelector('#btn_ans');
 
 //Переменные
 let score = 0;  // кол-во правильных ответов
-let questionIndex =0;   //Текущий вопрос
+let questionIndex = 0;   //Текущий вопрос
 let numberOFckicks = 0; //Количество кликов на кнопки ответов
 
 //Вызов функций
@@ -1086,7 +1086,7 @@ function showQuestion(){
     };
 
     let answerNumber = 1;
-    //Вывод вывод рандомных ответов
+    //Вывод рандомных ответов
     for(arry of questions[questionIndex]['answer']){        
         console.log(answerNumber, arry);
         const questionTemplate = 
