@@ -1042,37 +1042,11 @@ function resetClicks(){
 
 //Функция для отображения вопроса
 function showQuestion(){
-    //Вывод рондомного числа
-    // let m={};
-    // let arry= new Array();
-    // arry = [1, 2, 3, 4];
-    // for(let i=arry.length-1; i>0; i--){
-    //     let j = Math.floor(Math.random() * (i+1));
-    //     let tmp =arry[i];
-    //     arry[i]=arry[j];
-    //     arry[j]=tmp;
-    // };
-    // console.log (arry);
-    
-    
     //Вывод вопроса
     const headerTemplate = `<h2 class="title">%title%</h2>`;    //Шаблон
     const title = headerTemplate.replace('%title%', questions[questionIndex]['question']);
     headerContainer.innerHTML = title;
     console.log(questions[questionIndex]['question']);
-
-    //Вывод ответов
-    // for(answerText of questions[questionIndex]['answer']){        
-    //     const questionTemplate = 
-    //         `<button class="btn">
-    //             <p>%qustion%</p>
-    //         </button>`;
-
-    //     const answerHTML = questionTemplate.replace('%qustion%', answerText);
-    //     console.log(answerHTML);
-
-    //     listContainer.innerHTML += answerHTML;
-    // }
 
     //Генерация рандомных ответов
     let arry= new Array();
